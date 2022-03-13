@@ -1,0 +1,34 @@
+        * {
+            width: 100px;
+            height: 100px;
+        }
+        
+        #red {
+            background-color: red;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+        
+        #green {
+            background-color: green;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+            position: relative;
+            margin-left: 100px;
+        }
+        
+        #blue {
+            background-color: blue;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+            position: relative;
+            margin-left: 200px;
+        }
+        
+        #gray {
+            background-color: gray;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+            position: relative;
+            margin-left: 300px;
+        }

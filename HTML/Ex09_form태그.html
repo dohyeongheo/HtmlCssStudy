@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- form 태그 : 데이터를 전송할 때 사용하는 태그 -->
+    <form action="">
+        <!-- type = "text" : 데이터를 입력할 수 있는 태그 -->
+        아이디 입력 : <input type="text" name="id" value="smhrd"> <br>
+        이름 입력 : <input type="text" name="name" placeholder="이름을 입력하세요"> <br>
+        비밀번호 입력 : <input type="password" name="password" maxlength="5">
+        <hr>
+
+        <!-- 목록상자 -->
+        메일 선택
+        <select name="mail">
+            <option value="naver"> 네이버 </option>
+            <option value="google"> 구글 </option>
+            <option value="daum"> 다음 </option>
+        </select>
+        <hr>
+        <h3> 체크박스 : 좋아하는 음식을 고르시오 </h3>
+        <!-- type = "checkbox" 중복 선택 가능 -->
+        <input type="checkbox" name="food" value="checken"> 치킨 <br>
+        <input type="checkbox" name="food" value="pasta"> 파스타 <br>
+        <input type="checkbox" name="food" value="pizza"> 피자 <br>
+
+        <!-- 같은 체크박스는 같은 name으로 지정 -->
+        <h3> 체크박스 : 좋아하는 취미를 고르시오 </h3>
+        <input type="checkbox" name="hobby" value="game"> 게임 <br>
+        <input type="checkbox" name="hobby" value="sleep"> 낮잠 <br>
+        <input type="checkbox" name="hobby" value="reading"> 독서 <br>
+
+        <hr>
+
+        <!-- type = "radio" name이 같은 그룹일때 / 한개만 선택 가능 -->
+        <h3> 라디오 : 당신의 성별을 고르시오 </h3>
+        <input type="radio" name="gender" value="female"> 여자 <br>
+        <input type="radio" name="gender" value="male"> 남자 <br>
+        <!-- <input type="radio" name="sex" value="male"> 남자 <br>
+        <input type="radio" name="sex" value="male"> 여자 <br> -->
+
+        <hr>
+        <!-- 파일선택 -->
+        <input type="file" name="img">
+
+        <hr>
+        <!-- 컬러선택 -->
+        <input type="color" name="color">
+
+        <hr>
+        <!-- 숫자선택 -->
+        <input type="number" name="age" id="">
+
+        <hr>
+        <!-- 날짜선택 -->
+        <input type="date" name="birthday"> <br>
+        <!-- 날짜 + 시간 선택 -->
+        <input type="datetime-local" name="meeting">
+
+        <hr>
+        게시글 작성 <br>
+        <textarea name="board" id="" cols="60" rows="5" style="resize: none;"></textarea>
+
+        <!-- vtype = rest 선택내용, 입력내용 모두 초기화 
+            value 값 : 버튼의 이름 -->
+        <input type="reset" value="다 지우기">
+    
+        <!-- submit : input 요소의 모든 값을 전송할 때 누르는 버튼
+        value 값 : 회원가입의 이름 -->
+
+        <input type="submit" value = "회원가입">
+    
+    </form>
+
+
+</body>
+
+</html>

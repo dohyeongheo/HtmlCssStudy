@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* box-siing : 요소의 크기를 화면에 표시하는 방법
+    1. content-box : 크기를 지정했을 때,
+                    컨텐츠(내용) 의 크기를 지정 (기본값)
+                    컨텐츠의 크기가 200px
+    2. border-box : 크기를 지정했을 때
+                    border까지의 크기를 지정
+                    컨텐츠 + 패딩 + 보더 = 200px */ 
+                    
+
+    div{
+        margin: 5px;
+        width: 200px;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+    #small{
+        border: 10px solid black;
+        border-radius: 10px;
+        
+    }    
+    #large{
+        border: 30px solid black;
+    }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="small"> small </div>
+    <div id="large"> large </div>
+
+    
+</body>
+
+</html>

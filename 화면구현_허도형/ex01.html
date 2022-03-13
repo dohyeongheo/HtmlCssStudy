@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 400px;
+            height: 35px;
+            background-color: whitesmoke;
+        }
+        
+        .step {
+            font-weight: bold;
+            background-color: gray;
+            height: 50px;
+            text-align: center;
+        }
+        
+        .question {
+            text-align: right;
+        }
+        
+        .submit {
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+
+
+
+<body>
+    <table>
+        <tbody>
+
+            <tr class="step">
+                <td colspan="2">step 1 : 아이디 / 비밀번호 입력</td>
+            </tr>
+
+            <tr>
+                <td class="question"> 아이디 </td>
+                <td> <input type="text" name="id"> </td>
+            </tr>
+
+            <tr>
+                <td class="question"> 비밀번호 </td>
+                <td> <input type="password" name="pw"> </td>
+            </tr>
+
+            <tr class="step">
+                <td colspan="2">step 2 : 개인정보 </td>
+
+            </tr>
+
+            <tr>
+                <td class="question">성별</td>
+                <td>남 <input type="radio" name="gender" id="male"> 여 <input type="radio" name="gender" id="female"></td>
+            </tr>
+
+            <tr>
+                <td class="question">혈액형</td>
+                <td><select name="bloodtype">
+                        <option value="A형"> A형</option>
+                        <option value="B형"> B형 </option>
+                        <option value="O형"> O형 </option>
+                        <option value="AB형"> AB형 </option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td class="question">생일</td>
+                <td> <input type="date" name="birthday">
+                </td>
+            </tr>
+
+            <tr class="step">
+                <td colspan="2"> step3 : 선호도</td>
+            </tr>
+
+            <tr>
+                <td class="question">취미</td>
+                <td> 게임 <input type="checkbox" name="hobby" id="game"> 코딩 <input type="checkbox" name="hobby" id="coding"> 낮잠 <input type="checkbox" name="hobby" id="sleeping"></td>
+            </tr>
+
+            <tr>
+                <td class="question">좋아하는 색깔</td>
+                <td><input type="color" name="color"></td>
+            </tr>
+
+            <tr class="step">
+                <td colspan="2">step 4 : 적고싶은 말</td>
+
+            </tr>
+
+            <tr>
+                <td colspan="2"> <textarea name="board" cols="53" rows="6" style="resize: none;"></textarea></td>
+                <!-- 문제 설정 값으로 text area 크기 지정 했는데 예쁘게 안나왔습니다
+                문제 표기값 그대로 제출하겠습니다. -->
+
+            </tr>
+
+            <tr class="submit">
+                <td colspan="2"><input type="submit" value="제출"> <input type="reset" value="초기화"> </td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>

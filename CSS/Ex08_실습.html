@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 스타일 적용 */
+
+    a:hover+sup {
+        display: inline;
+        border: 5px solid gray;
+        color: tomato;
+    }
+
+    a~a:hover+sup {
+        display: inline;
+        border: 5px solid gray;
+        color: tomato;
+    }
+
+    sup {
+        display: none;
+    }
+</style>
+
+<body>
+    <!-- html 뼈대부터 만들기 -->
+    <a href="https://www.naver.com"> 네이버 </a>
+    <sup class="네이버"> www.naver.com </sup>
+    <br><br>
+    <a href="https://www.daum.com"> 다음 </a>
+    <sup class="다음"> www.daum.com </sup>
+
+</body>
+
+</html>

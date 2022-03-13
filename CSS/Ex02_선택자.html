@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* 전체 선택자 */
+    * {
+        color: black;
+    }
+
+    /* 타입선택자 : 요소이름 */
+    h1 {
+        color: tomato;
+    }
+
+    a {
+        color: steelblue;
+    }
+
+    /* 클래스 선택자 : .클래스이름 */
+    /* Java 수업을 들어온 사람만 글자배경색을 검정색으로 표시 */
+
+    .조민규 {
+        background-color: gray;
+    }
+
+    .윤진관 {
+        background-color: gainsboro;
+    }
+
+    .윤솔아 {
+        background-color: mediumseagreen;
+    }
+
+    .김민정 {
+        background-color: pink;
+    }
+
+    .허도형 {
+        background-color: tomato;
+    }
+
+    /* 아이디 선택자 : #아이디이름 */
+    /* html 수업을 들어온 사람만 배경색을 회색으로 변경 */
+    #남자 {
+        font-family: 맑은 고딕;
+    }
+
+    #여자 {
+        font-family: 궁서체;
+
+    }
+
+    
+
+    /* 계층선택자(자손, 자식, 근접후행형제, 후행형제) 
+ 기준요소 계층선택자기호 변경요소
+ 1. body를 기준으로 해서  li 요소의 글자 크기를 100px로 변경 */
+
+ body li {
+        font-size: 20px;
+    }
+
+    li~#남자{
+        font-style: italic;
+    }
+
+
+</style>
+
+
+<body>
+    <h1> new Pizza(); </h1>
+    <ul>
+        <li class="조민규" id="남자">조민규</li>
+        <li class="윤진관" id="남자">윤진관</li>
+        <li class="윤솔아" id="여자">윤솔아</li>
+        <li class="김민정" id="여자">김민정</li>
+        <li class="허도형" id="남자">허도형</li>
+    </ul>
+
+    <br>
+
+    <a href="https://www.naver.com"> 네이버 </a>
+
+
+</body>
+
+</html>

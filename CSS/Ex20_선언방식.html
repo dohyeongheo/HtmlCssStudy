@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* 2. 내부 방식 : style태그를 사용해서 지정 */
+        h1 {
+            background-color: black;
+        }
+    </style>
+
+    <!-- 3. 외부방식 : link 태그를 사용해서 외부 css 적용 -->
+    <!-- 특징 1. link 태그 순서대로 다운로드
+        특징 2. 병렬다운로드 지원
+        특징 3. 대신 link가 많아지면 코드가 지저분해짐 -->
+    <link rel="stylesheet" href="Ex20_외부방식.css">
+    
+
+    <!-- 4. import방식 : style태그 내에 import방식 사용!
+    특징 1. 다운로드 순서를 예측 불가능
+    특징 2. 병렬다운로드 지원x
+    특징 3. 외부 css 파일이 많을때 link태그보다 간결한 코드 -->
+    <style>
+        @import url(Ex20_import방식.css);
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+    <!-- 인라인 방식 : html 태그내에 style 속성으로 지정 -->
+    <h1 style="color: tomato;"> 허도형 </h1>
+    <h2> 스마트인재개발원 </h2>
+
+</body>
+
+</html>
